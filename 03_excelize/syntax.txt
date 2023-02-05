@@ -1,0 +1,106 @@
+
+				UPDATE equip.equip SET owner= 'Eve'
+				WHERE id= 'E012345';
+				
+				UPDATE equip.equip SET name= '螢幕19”'
+				WHERE id= 'E012345';
+				
+				UPDATE equip.equip SET model= 'ViewSnoic AV6640'
+				WHERE id= 'E012345';
+				
+				UPDATE equip.equip SET status= ''
+				WHERE id= 'E012345';
+				
+				UPDATE equip.equip SET locate= '8-3F'
+				WHERE id= 'E012345';
+				
+				UPDATE equip.equip SET owner= 'Eva'
+				WHERE id= 'E012346';
+				
+				UPDATE equip.equip SET name= 'barcode scanner'
+				WHERE id= 'E012346';
+				
+				UPDATE equip.equip SET model= 'symbol t7888'
+				WHERE id= 'E012346';
+				
+				UPDATE equip.equip SET status= '待換'
+				WHERE id= 'E012346';
+				
+				UPDATE equip.equip SET locate= '8-3F'
+				WHERE id= 'E012346';
+				
+				UPDATE equip.equip SET owner= 'Iris'
+				WHERE id= 'E012347';
+				
+				UPDATE equip.equip SET name= '螢幕19”'
+				WHERE id= 'E012347';
+				
+				UPDATE equip.equip SET model= 'ASUS A9420'
+				WHERE id= 'E012347';
+				
+				UPDATE equip.equip SET status= ''
+				WHERE id= 'E012347';
+				
+				UPDATE equip.equip SET locate= '9-1F'
+				WHERE id= 'E012347';
+				
+				UPDATE equip.equip SET owner= 'Anny'
+				WHERE id= 'E012348';
+				
+				UPDATE equip.equip SET name= 'printer'
+				WHERE id= 'E012348';
+				
+				UPDATE equip.equip SET model= 'TSC t233'
+				WHERE id= 'E012348';
+				
+				UPDATE equip.equip SET status= '0'
+				WHERE id= 'E012348';
+				
+				UPDATE equip.equip SET locate= '9-3F'
+				WHERE id= 'E012348';
+				
+				UPDATE equip.equip SET owner= 'Tracy'
+				WHERE id= 'E012349';
+				
+				UPDATE equip.equip SET name= 'NB'
+				WHERE id= 'E012349';
+				
+				UPDATE equip.equip SET model= 'HP i5778/1T'
+				WHERE id= 'E012349';
+				
+				UPDATE equip.equip SET status= ''
+				WHERE id= 'E012349';
+				
+				UPDATE equip.equip SET locate= '8-2F'
+				WHERE id= 'E012349';
+				
+				UPDATE equip.equip SET owner= 'Sue'
+				WHERE id= 'E012350';
+				
+				UPDATE equip.equip SET name= '螢幕19”'
+				WHERE id= 'E012350';
+				
+				UPDATE equip.equip SET model= 'ViewSnoic AV6640'
+				WHERE id= 'E012350';
+				
+				UPDATE equip.equip SET status= ''
+				WHERE id= 'E012350';
+				
+				UPDATE equip.equip SET locate= '8-3F'
+				WHERE id= 'E012350';
+				
+				UPDATE equip.equip SET owner= 'Sue'
+				WHERE id= 'E012351';
+				
+				UPDATE equip.equip SET name= 'PC'
+				WHERE id= 'E012351';
+				
+				UPDATE equip.equip SET model= 'ASUSPRO I7330'
+				WHERE id= 'E012351';
+				
+				UPDATE equip.equip SET status= ''
+				WHERE id= 'E012351';
+				
+				UPDATE equip.equip SET locate= '8-3F'
+				WHERE id= 'E012351';
+				

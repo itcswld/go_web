@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            font-size: 5vw;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>this is Ajax</h1>
+    <script>
+        document.querySelector('h1').onclick = makeRequest;
+
+        function makeRequest() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', '/text', true);
+            //handle the responese
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                    var body = document.querySelector('body');
+                    var createElement = document.createElement('h1');
+                    var createNode = document.createTextNode(xhr.responseText);
+                    // alert(xhr.responseText)
+                    createElement.appendChild(createNode);
+
+                    body.appendChild(createElement);
+                }
+            };
+            //send request
+            xhr.send();
+        }
+    </script>
+    
+</body>
+</html>

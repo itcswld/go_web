@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    {{if .First}}
+    user name : {{.Username}}<br>
+    password : {{.Password}}<br>
+    First : {{.First}}<br>
+    Last : {{.Last}}<br>
+    Age: {{.Age}}<br>
+    <h2><a href="/logout">log out</a></h2><br>
+    {{else}}
+    <h2><a href="/signup">Sign up</a></h2><br>
+    <h2><a href="/login">Log in</a></h2><br>
+    {{end}}
+    <br>
+    <h2>Go to <a href="/bar">the bar</a></h2>
+</body>
+
+</html>

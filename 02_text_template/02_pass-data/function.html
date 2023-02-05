@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Function</title>
+</head>
+
+<body>
+    {{range .}}
+    {{upcasing .Quote}} - {{upcasing .Name }}
+    {{end}}
+
+    {{range $i, $e := .}}
+    {{$i}} - {{top3 $e.Name }}
+    {{end}}
+
+    <!-- method -->
+    {{$index1 := index . 1}}
+    {{$index1.Name}}'s Age is {{$index1.Age}}
+    <!-- take argument -->
+    age 2 times
+    {{$index1.Age | $index1.TakeArg}}
+
+</body>
+
+</html>

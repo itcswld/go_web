@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Struct</title>
+</head>
+
+<body>
+    <ul>
+        <li> {{.From}} - {{.To}} </li>
+        <!-- variable -->
+        {{$x := .From}}
+        {{$y := .To}}
+        <li> {{$x}} - {{$y}} </li>
+    </ul>
+</body>
+
+</html>
