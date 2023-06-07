@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Http Request </title>
+</head>
+
+<body>
+    <header>
+        {{if .Method}}<p>method:{{.Method}}</p> {{end}}
+        {{if .Host}}<p>host:{{.Host}}</p> {{end}}
+        {{if .ContentLength}}<p>ContentLength:{{.ContentLength}}</p>{{end}}
+        <hr>
+
+        <!-- URL :*url.URL-->
+        {{if .URL}}
+        <h3><b>URL</b></h3>
+        <ul>
+            <li>Scheme:{{.URL.Scheme}}</li>
+            <li>Opaque:{{.URL.Opaque}}</li>
+            <li>Host:{{.URL.Host}}</li>
+            <li>Path:{{.URL.Path}}</li> {{/* only Path has value*/}}
+            <li>RawPath:{{.URL.RawPath}}</li>
+            <li>Fragment:{{.URL.Fragment}}</li>
+        </ul>
+        {{end}}
+        <hr>
+
+        <!-- http.Header -->
+        <h3><em>http.Header</em></h3>
+        {{if .Header}}
+        {{range $k, $v := .Header}}
+        <p>{{$k}}</p>
+        <ul>
+            {{range $v}}
+            <li>{{.}}</li>
+            {{end}}
+        </ul>
+        {{end}}
+        {{end}}
+        <hr>
+
+        <!-- submisstion : url.Values-->
+        <h3><em>submisstion : url.Values</em></h3>
+        {{if .Submissions}}
+        {{range $k, $v := .Submissions}}
+        <p><strong>variable:{{$k}}</strong></p>
+        {{range  $v}}
+        <ul>
+            <li>value: {{.}}</li>
+        </ul>
+        {{end}}
+        {{end}}
+        {{end}}
+
+    </header>
+
+    <form action="/" method="POST">
+        <input type="text" name="name" placeholder="frist name" autofocus autocomplete="false">
+        <input type="submit" name="submit_btn" value="Submit">
+    </form>
+</body>
+
+</html>

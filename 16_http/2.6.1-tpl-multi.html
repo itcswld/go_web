@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>embed template</title>
+</head>
+<body>
+    <hr>
+    <!-- 關鍵字“template”執行範本 -->
+    {{template "2.6.1-ul.html"}}
+    <hr>
+    {{template "ol.html"}}
+</body></html>
+<!-- 關鍵字"define" 在待解析tpl自定義template -->
+{{define "ol.html"}}
+<h1>this is ol.html</h1>
+<ol>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ol>
+{{end}}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStorage</title>
+    <script>
+        // web storage
+        localStorage.setItem('favFlavor', 'chocolate');
+        var k = 'favFlavor'
+        var v = localStorage.getItem(k);
+        console.log("web storage \n");
+        console.log("my favorite flavor is ", v);
+        localStorage.removeItem(k)
+        console.log("after remove ", k)
+        console.log("my favorite flavor is ", localStorage.getItem(k));
+        //sessiong storage
+        sessionStorage.setItem('key', 'value')
+        var sK = 'key'
+        var sV = sessionStorage.getItem(sK)
+        console.log("session storage \n", sK, ':', sV)
+        sessionStorage.removeItem(sK)
+        console.log("after remove ", k)
+        console.log(sK, ':', sessionStorage.getItem(sK))
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

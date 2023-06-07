@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+
+<body>
+    <!-- range -->
+    {{range .}}
+    {{.}}
+    {{end}}
+
+    <!-- if -->
+    {{/* if has data , return slice */}}
+    {{if .}}
+    {{.}}
+    {{end}}
+
+    {{/* print data has name */}}
+    {{range .}}
+    {{if .Name}}
+    {{.Name}}
+    {{end}}
+    {{end}}
+    <!-- and -->
+    {{range .}}
+    {{/*  who is alive ? */}}
+    {{if and .Name .Alive}}
+    Name:{{.Name}}
+    Quote:{{.Quote}}
+    {{end}}
+    {{end}}
+
+    <!-- comparison -->
+    {{$i1 := index . 1}}
+    {{$i2 := index . 2}}
+    <!-- gt: "greater than" -->
+    {{if gt $i1.Age $i2.Age}}
+    {{$i1.Name}} > {{$i2.Name}}
+    {{end}}
+    <!-- lt: "less than" -->
+    {{if lt  $i1.Age $i2.Age}}
+    {{$i1.Name}} {{`<`}} {{$i2.Name}}
+    {{end}}
+    {{if lt $i2.Age 100}}
+    {{$i2.Name}} {{`<`}} 100 years-old
+    {{end}}
+</body>
+
+</html>

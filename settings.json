@@ -1,0 +1,43 @@
+{
+    
+    //======================= Go ======================================//
+   "[go]":{
+       "editor.formatOnSave": true,
+       "editor.codeActionsOnSave": {
+           "source.organizeImports": true
+       },
+   },
+    "go.gocodeAutoBuild": true,
+    "go.toolsManagement.autoUpdate": true,
+    "go.formatTool": "goimports",
+    "go.lintOnSave": "package",
+    "go.testOnSave": true,
+    "go.testFlags": ["-v"],
+    "go.autocompleteUnimportedPackages": true,
+    "gopls": {
+       "experimentalWorkspaceModule": true,
+   },
+
+   "editor.minimap.enabled": false,
+   "files.autoSave": "onWindowChange", // 自動儲存檔案, afterDelay、onWindowChange、onFocusChange
+   "files.autoSaveDelay": 3000, 
+   
+   "workbench.colorTheme": "Default Dark+",
+   "json.schemas": [
+
+
+
+
+   ],
+   "liveServer.settings.donotVerifyTags": true,
+   "explorer.confirmDragAndDrop": false,
+   "liveServer.settings.donotShowInfoMsg": true,
+   "[jsonc]": {
+       "editor.defaultFormatter": "esbenp.prettier-vscode"
+   },
+   "settingsSync.ignoredExtensions": [
+       
+   ]
+   
+
+}

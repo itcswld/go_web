@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>map</title>
+</head>
+
+<body>
+    <ul>
+        {{range $k, $v := .}}
+        <li>{{$k}} is {{$v}} years-old</li>
+        {{end}}
+    </ul>
+</body>
+
+</html>

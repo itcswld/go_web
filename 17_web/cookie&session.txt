@@ -1,0 +1,27 @@
+cookie用途
+1.階段管理 
+2.實現個性化（user偏好設定）
+3.追蹤（紀錄和分析user行為）
+
+cookie創建
+1.Setcookie標頭和cookie
+//client http request 時 server發送帶有回應的標頭：將cookie從server傳送到client
+2.階段cookie
+//client關，沒Expires或Max-Age，即刪cookie，
+3.永久cookie
+//client關，到期expires或Max-Age，才刪
+4.安全的cookie
+//加密後傳到server。 （本質上還是不安全）
+
+cookie作用域
+不指定Domain,則預設為當前host但不含子網；反之， Domain含子網
+
+Session用途
+儲存Client在同一階段期間的一些操作記錄
+
+Session缺點
+若A-svr存爆了， 轉B-svr存， 但B-svr沒A-svr的session，導致session故障
+
+與session區別
+client可選禁用cookie; session無法
+cookie只能存string類型 

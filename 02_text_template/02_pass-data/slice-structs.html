@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Structs</title>
+</head>
+
+<body>
+    <ul>
+        {{range .Airplanes}}
+        <il>{{.Airline}} Airline:{{.From}} - {{.To}}</il>
+        {{end}}
+    </ul>
+    <ul>
+        {{range .Buses}}
+        <li>Bus: {{.From}} - {{.To}} </li>
+        {{end}}
+    </ul>
+
+</body>
+
+</html>
