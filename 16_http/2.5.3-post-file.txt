@@ -1,2 +1,0 @@
-focus on go and flutter 2022
-export in Go.

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nest</title>
+</head>
+<body>
+    {{template "title.html"}}
+    <p>Hello, {{.User}}</p>
+    {{template "06_Nbody.html" .}}
+    <hr>
+    {{block "h1_2.html" .}}<h4>{{.App}} Version of Aug 2, 2023</h4>
+    {{end}}
+    {{block "06_Nfooter.html" .}}
+    {{end}}
+</body>
+</html>
+
+{{define "title.html"}}
+<h1>The Go Programming Language Specification</h1>
+{{end}}
