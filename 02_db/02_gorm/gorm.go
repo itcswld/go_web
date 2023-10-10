@@ -12,7 +12,7 @@ var (
 	server   = "localhost"
 	port     = 1433
 	user     = "sa"
-	password = "E3ngin@@r"
+	password = "yourpassword"
 	database = "edusys"
 )
 

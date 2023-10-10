@@ -26,7 +26,7 @@ func main() {
 	}
 
 	user := beego.AppConfig.String("sa")
-	password := beego.AppConfig.String("E3ngin@@r")
+	password := beego.AppConfig.String("yourpassword")
 	dbName := beego.AppConfig.String("edusys")
 
 	connString := fmt.Sprintf("server=%s;port%d;database=%s;user id=%s;password=%s", host, port, dbName, user, password)
