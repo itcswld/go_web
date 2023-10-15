@@ -35,13 +35,13 @@ $ cd <protoc-gen-go-grpc path>
 $ sudo cp -r protoc-gen-go-grpc /usr/local/bin/
 ```
 
-4. create a proto file
+4. Defining the service by a proto file
 ```
 $ cd <project path>
 $ go get -u github.com/golang/protobuf/proto
 $ go get -u github.com/golang/protobuf/protoc-gen-go
 ```
-5. To generate relative go file in project path
+5. Generating client and server code 
 ```
-$ protoc --go-grpc_out=. ./programmer.proto
+$ protoc --go-grpc_out=. ./programmer.proto \ --go-grpc_out=. ./programmer.proto
 ```
