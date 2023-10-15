@@ -29,4 +29,7 @@ func main() {
 	fmt.Printf("Recevied %v\n", resp)
 }
 
-//Recevied message:"Hello ! my friend."
+/*
+$go run clinet.go
+Recevied message:"Hello ! my friend."
+*/

@@ -42,4 +42,7 @@ func main() {
 	}
 }
 
-//result listen :8078
+/*
+$go run server.go
+result listen :8078
+*/
