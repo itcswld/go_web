@@ -37,25 +37,6 @@ func DowloadPage(ctx *gin.Context) {
 	ctx.File("/Users/eve/Sites/go_web/08_RESTful_API/01_gin/static/favicon-gopher.svg")
 }
 
-func SetCookiePage(ctx *gin.Context) {
-	ctx.SetCookie("mycookie", "myvalue", 3600, "/", "localhost", false, true)
-}
-
-func ReadCookiePage(ctx *gin.Context) {
-	data, err := ctx.Cookie("mycookie")
-	if err != nil {
-		ctx.String(http.StatusOK, "not found!")
-		return
-	}
-	ctx.String(http.StatusOK, data)
-
-}
-
-func DeleteCookiePage(ctx *gin.Context) {
-	ctx.SetCookie("mycookie", "myvalue", -1, "/", "localhost", false, true)
-	ctx.String(http.StatusOK, "Cookie is Deleted!")
-}
-
 func UploadFilePage(ctx *gin.Context) {
 	f, _ := ctx.FormFile("myfile")
 	log.Println(f.Filename)
