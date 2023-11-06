@@ -7,7 +7,7 @@ import (
 
 func echo(s string) {
 	for i := 0; i < 3; i++ {
-		time.Sleep(100 * time.Millisecond)
+		time.Sleep(time.Second)
 		fmt.Println(s)
 	}
 }
